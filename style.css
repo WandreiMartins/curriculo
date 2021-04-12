@@ -284,5 +284,15 @@ body{
     
 }
 
+.msg{
+    position: fixed;
+    left: calc(50%-200px);
+    top: 200px;
+    background-color: aqua;
+    width: 400px;
+    height: 300px;
+    z-index: 10;
+}
+
 
 
