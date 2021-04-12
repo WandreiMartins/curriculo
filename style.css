@@ -25,6 +25,7 @@ body{
     height: 1106px;
     margin-top: 9px;
     display: flex;
+    /* margin: 20px; */
 }
 .leftbox{
     width: 350px;
