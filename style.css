@@ -216,11 +216,11 @@ body{
 }
 .rightbox div .barra span:nth-child(2){
     right: -2px;
-    top: 139px;
+    top: 147px;
 }
 .rightbox div .barra span:nth-child(3){
     right: -2px;
-    top: 282px;
+    top: 300px;
 }
 .tecnologias{
     width: 100%;
@@ -287,6 +287,7 @@ body{
 
 .msg{
     position: fixed;
+    /* left: -100%; */
     left: calc(50%-200px);
     top: 200px;
     background-color: rgb(255, 255, 255);
@@ -294,8 +295,9 @@ body{
     height: 300px;
     z-index: 10;
     -webkit-box-shadow: 6px -6px 13px 1px rgba(0,0,0,0.53); 
-box-shadow: 6px -6px 13px 1px rgba(0,0,0,0.53);
+    box-shadow: 6px -6px 13px 1px rgba(0,0,0,0.53);
     display: flex;
+    /* transition: 0.5s ease-in-out; */
 }
 .img{
     width: 200px;
@@ -347,12 +349,23 @@ box-shadow: 6px -6px 13px 1px rgba(0,0,0,0.53);
     top:-24px
 }
 .btnf span{
+    position: absolute;
     width: 5px;
-    height: 25px;
+    height: 30px;
     display: block;
     background-color: #fff;
+    border-radius: 2px;
 }
-
+.btnf span:nth-child(1){
+    transform: rotate(45deg);
+    left: 20px;
+    top: 9px;
+}
+.btnf span:nth-child(2){
+    transform: rotate(-45deg);
+    left: 20px;
+    top: 9px;
+}
 
 
 
