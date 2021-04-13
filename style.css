@@ -117,11 +117,13 @@ body{
     align-items: center;
     padding: 9px;
 }
-.rightbox .nome{
+ .nome{
     width: 100%;
     height: auto;
     margin-bottom: 20px;
-    
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
 
 }
 .rightbox div h2{
@@ -132,18 +134,12 @@ body{
     font-size: 0.7rem;
     margin: 6px 0;
 }
-.rightbox .nome{
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
 
-
-}
-.rightbox div:nth-child(1) h1{
+.nome h1{
     color: var(--secudaria);
     font-size: 2rem;
 }
-.rightbox div:nth-child(1) h2{
+.nome h2{
     color: var(--titulos);
     font-size: 1.7rem;
     font-weight: 400;
@@ -254,7 +250,8 @@ body{
 .legenda .legBarra span:nth-child(1){
     background-color: green;
 }
-.legenda{
+
+.legenda, .sub{
     display: flex;
     flex-wrap: wrap;
 }
@@ -276,11 +273,60 @@ body{
     display: flex;
     margin: 9px 0;
 }
-
+.nomeMedia{
+    display: none;
+}
 /*CSS para impressão*/
 @media print {
     body{
         background-color: transparent !important;
+    }
+    
+}
+@media (max-width: 768px) { 
+    .rightbox div .barra span{
+        display: none;
+    }
+    .rightbox div .barra{
+        display: none;
+    }
+    .container{
+        flex-wrap: wrap;
+        height: 100%;
+    }
+    .rightbox{
+        padding-left: 25px;
+    }
+    .leftbox{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .nome{
+        display: none;
+    }
+    .nomeMedia{
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .nomeMedia h1{
+        color: var(--fontePrimaria);
+        font-size: 2rem;
+    }
+    .nomeMedia h2{
+        color: var(--secudaria);
+        font-size: 1.7rem;
+        font-weight: 400;
+    }
+}
+@media (max-width: 530px) {
+   
+    .legContH{
+        margin: 0px 42px;
     }
     
 }
