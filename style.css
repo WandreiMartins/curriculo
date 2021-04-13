@@ -22,10 +22,10 @@ body{
 }
 .container{
     width: 780px;
-    height: 1150px;
+    height: 1106px;
     margin-top: 9px;
     display: flex;
-    margin: 20px;
+    /* margin: 20px; */
 }
 .leftbox{
     width: 350px;
@@ -120,7 +120,7 @@ body{
 .rightbox .nome{
     width: 100%;
     height: auto;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     
 
 }
@@ -216,11 +216,11 @@ body{
 }
 .rightbox div .barra span:nth-child(2){
     right: -2px;
-    top: 145px;
+    top: 139px;
 }
 .rightbox div .barra span:nth-child(3){
     right: -2px;
-    top: 313px;
+    top: 282px;
 }
 .tecnologias{
     width: 100%;
@@ -289,11 +289,70 @@ body{
     position: fixed;
     left: calc(50%-200px);
     top: 200px;
-    background-color: aqua;
-    width: 400px;
+    background-color: rgb(255, 255, 255);
+    width: 500px;
     height: 300px;
     z-index: 10;
+    -webkit-box-shadow: 6px -6px 13px 1px rgba(0,0,0,0.53); 
+box-shadow: 6px -6px 13px 1px rgba(0,0,0,0.53);
+    display: flex;
 }
+.img{
+    width: 200px;
+    height: 100%;
+    background: #dbdbdb url(img.png) no-repeat center center;
+    background-size: 150%;
+
+}
+.texto{
+    width: 300px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.texto h1{
+    text-align: center;
+    margin: 30px 10px 0px 10px;
+    font-size: 1.2rem;
+}
+.texto p{
+    margin: 20px 10px 0px 10px;
+    text-align: center;
+}
+.texto button{
+    display: block;
+    width: 170px;
+    height: 35px;
+    background-color: rgb(224, 74, 74);
+    color: #fff;
+    border: none;
+    outline: none;
+    margin: 40px auto;
+    cursor: pointer;
+}
+.texto button:hover{
+    background-color: rgb(212, 107, 107);
+}
+.texto button:active{
+    background-color: rgb(218, 74, 74);
+}
+.btnf{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-color: rgb(224, 74, 74) ;
+    border-radius: 50%;
+    -webkit-box-shadow: 6px -6px 13px 1px rgba(0,0,0,0.53); 
+    box-shadow: 6px -6px 13px 1px rgba(0,0,0,0.53);
+    left: 483px;
+    top:-24px
+}
+.btnf span{
+    width: 5px;
+    height: 25px;
+    display: block;
+    background-color: #fff;
+}
+
 
 
 
