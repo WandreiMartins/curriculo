@@ -276,7 +276,7 @@ body{
 .nomeMedia{
     display: none;
 }
-/* CSS para impressão
+/* //CSS para impressão */
 @media print {
     body{
         background-color: transparent !important;
@@ -329,7 +329,7 @@ body{
         margin: 0px 42px;
     }
     
-} */
+}
 
 .msg{
     position: fixed;
