@@ -114,7 +114,6 @@ body{
 .rightbox{
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 9px;
 }
  .nome{
@@ -131,6 +130,16 @@ body{
 }
 .rightbox .sobre p{
     color: var(--secudaria);
+    font-size: 0.7rem;
+    margin: 6px 0;
+}
+.objetivo{
+    color: var(--secudaria);
+    font-size: 0.7rem;
+    margin: 6px 0;
+
+}
+.objetivo p{
     font-size: 0.7rem;
     margin: 6px 0;
 }
@@ -209,14 +218,17 @@ body{
 .rightbox div .barra span:nth-child(1){
     right: -2px;
     top: 12px;
+    display: none;
 }
 .rightbox div .barra span:nth-child(2){
     right: -2px;
     top: 147px;
+    display: none;
 }
 .rightbox div .barra span:nth-child(3){
     right: -2px;
     top: 300px;
+    display: none;
 }
 .tecnologias{
     width: 100%;
@@ -276,7 +288,91 @@ body{
 .nomeMedia{
     display: none;
 }
-/* //CSS para impressão */
+.download{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    height: 140px;
+    width: 230px;
+    background-color: #fff;
+    box-shadow: 2px 2px 8px #888888;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.download p{
+    margin-bottom: 15px;
+    text-align: center;
+}
+.download button{
+    color: #fff;
+    background-color: red;
+    border: none;
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+}
+.download button:hover{
+    background-color: rgb(255, 25, 25);
+}
+.download button:active{
+    background-color: rgb(238, 0, 0);
+}
+.btn-fechar{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: -12px;
+    right: -11px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+.btn-fechar p{
+    color: white;
+    font-size: 1.7rem;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    top: 3px; 
+}
+.btn-fechar img{
+    width: 25px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.btn-abrir{
+    width: 30px;
+    height: 30px;
+    /* background-color: red; */
+    border-radius: 50%;
+    position: fixed;
+    bottom: 150px;
+    right: -8px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btn-abrir img{
+    width: 100%;
+    height: auto;
+    transform: rotateY(180deg);
+    border-radius: 50%;
+    object-fit: cover;
+}
+.fchr{
+    display: none;
+}
+
 @media print {
     body{
         background-color: transparent !important;
