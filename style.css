@@ -205,6 +205,7 @@ body{
     height: 400px;
     background-color: var(--fontePrimaria);
     left: 86px;
+    top:34px;
 }
 .rightbox div .barra span{
     width: 7px;
