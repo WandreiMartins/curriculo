@@ -6,6 +6,7 @@
     --titulos: #747474;
     
     
+    
 }
 
 *{
@@ -13,7 +14,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: 19px;
 }
 body{
     display: flex;
@@ -199,7 +200,25 @@ body{
     position: relative;
     
 }
+/* .barraQ{
+    position: absolute;
+    width: 86.5px;
+    height: 100%;
+    border: 1px solid red;
+} */
+.empresa{
+    position: relative;
+}
+.barraQ{
+    position: absolute;
+    margin-top: 28px;
+    width: 18%;
+    height: 92%;
+    border-right: 3px solid rgb(167, 167, 167);
+    z-index: 1;
+}
 .rightbox div .barra{
+    display: none;
     position: absolute;
     width: 3px;
     height: 400px;
@@ -261,7 +280,7 @@ body{
 }
 .tec p{
     display: inline-block;
-    font-size: 14px;
+    font-size:0.7rem ;
     width: 85px;
     text-align:left;
 }
